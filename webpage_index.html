@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIRKWILLS</title>
+    <link rel="icon" type="image/jpg" href="images/1.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="google.com" target="_blank" title="goes to google">link to google</a>
+    <br>
+    <a href="mailto:inshikenotaizi@gmail.com" target="_blank">email me</a>
+    <br>
+    <a href="cartoonsarea.com" target="_blank" title="goes to cartoons area">
+    <image src="images/1.jpg" width="200px" height="200px">
+    </a>
+    <br>
+    <video controls  height="200px">
+        <source src="60 The Other Side of the Sea.mp4" type="video/mp4" >
+    </video>
+    <br><br>
+    <audio controls >
+        <source src="musik/Wiz_Khalifa_feat_Charlie_Puth_-_See_You_Again_Qoret.com.mp3">
+    </audio>
+
+
+
+
+    <br>
+    <!--TEXT EDITING-->
+    <p>This is a <i>normal</i> text</p>
+    <p>This is a <b>normal</b> text</p>
+    <p>This is a <u>normal</u> text</p>
+    <p>This is a <del>normal</del> text</p>
+    <p>This is a <big>normal</big> text</p>
+    <p>This is a <small>normal</small> text</p>
+    <p>This is a <tt>normal</tt> text</p>
+    <p>This is a <sub>normal</sub> text</p>
+    <p>This is a <sub>normal</sub> text</p>
+    <p>This is a <sup>normal</sup> text</p>
+    <p>This is a <mark>normal</mark> text</p>
+
+    <!--GROUP TOGETHER HTML-->
+    <p><span style="background-color:red;">This  is a span paragraph</span></p>
+    <p><div style="background-color:cyan;">This  is a div paragraph</div></p>
+    <p><span style="background-color:cyan;">lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</span></p>
+    <p><div style="background-color:red;">lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</div></p>
+    <!--MAKING LISTS USING HTML-->
+    <ul>
+        <li>books</li>
+        <li>praticals</li>
+        <ul>
+            <li>science manuscript</li>
+        </ul>
+    </ul>
+    <ol>
+        <li>Go for a walk</li>
+        <li>Practice some math questions</li>
+    </ol>
+    <!--DESCRIPTION LISTS-->
+    <dl>
+        <dt>Undergrad</dt>
+        <dd>Is a person who is undergoing a bachelor's degree program.</dd>
+    </dl>
+    <!--CREATING TABLES IN HTML-->
+    <table border="2">
+        <tr align="center" style="background-color:aquamarine;">
+            <th width="100">MONDAY</th>
+            <th width="100">TUESDAY</th>
+            <th width="100">WEDNESDAY</th>
+            <th width="100">THURSDAY</th>
+            <th width="100">FRIDAY</th>
+            <th width="100">SATURDAY</th>
+        </tr>
+        <tr align="center" style="background-color:pink;">
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>10-2</td>
+        </tr>
+    </table>
+    <br> 
+        <button onclick="performance()" style="font-size:30px; background-color:grey; color:lightblue; border-radius:25px;" >CLICK ME</button>
+        <p id="salute">Hello World</p>
+        <script>
+            function performance(){
+                document.getElementById("salute").innerHTML="Goodbye";
+            }
+        </script>
+        
+
+        <br>
+        <form action="index.php" method="POST" enctype="multipart/form-data">
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Bossman" minlength="6" required>
+            
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" minlength="8" required>
+            <br>
+            <label for="email">email:</label>
+            <input type="email" id="email" placeholder="inshikenotaizi@gmail.com"><br>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone">
+            <br>
+            <label for="bday">Birthday</label>
+            <input type="date" id="bday">
+
+            <br>
+            <label for="quantity">quantity:</label>
+            <input type="number" id="quantity" min="0" max="999">
+
+            <br>
+            <label for="Mr.">Mr.</label>
+            <input type="radio" id="Mr." value="Mr." name="title">
+
+            <label for="Mrs.">Mrs.</label>
+            <input type="radio" id="Mrs." value="Mrs." name="title">
+            <label for="PhD">PhD</label>
+            <input type="radio" id="PhD" value="PhD" name="title">
+
+            <br>
+            <label for="payment">Payment</label>
+                <select id="payment">
+                    <option value="visa">visa</option>
+                    <option value="masterclass">masterclass </option>
+                    <option value="giftcard">giftcard</option>
+                </select><br>
+
+            <label for="suscribe">suscribe</label>
+            <input type="checkbox" id="suscribe"><br>
+            <label for="comment">comment:</label>
+            <textarea id="comment" rows="4" cols="25">
+
+            </textarea><br>
+            <label for="file">file:</label>
+            <input type="file" id="file" accept="audio/mp3"><br>
+
+
+
+            <input type="submit">
+            <input type="reset">
+
+        </form>
+
+
+
+        <header style="background-color:mediumpurple;">
+            <h1>WELCOME TO BROCODE</h1>
+            <a href="">Home</a>
+            <a href="">About Us</a>
+            <a href="">Products</a>
+            <a href="">Contact Us</a>
+        </header>
+
+        <br>
+        <main>
+            <h4>Check out these pics</h4>
+            <image src="images/1.jpg" width="300px"  title="This is Ichigo" alt="This is ichigo">
+            <pre>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Vel saepe ipsam deleniti cumque fugiat eius, impedit, in commodi repudiandae nobis eos amet!
+                Expedita officiis facilis ipsa repudiandae facere deleniti eveniet?
+            </pre>
+        </main>
+
+        <footer style="background-color:mediumpurple;">
+            <hr>
+            author: Bossman<br>
+            &copy; copyright reserved <br>
+            <small><a href="mailto:inshikenotaizi@gmail.com">inshikenotaizi@gmail.com</a></small>
+        </footer>
+    <script src="website.js"></script>
+</body>
+</html>
